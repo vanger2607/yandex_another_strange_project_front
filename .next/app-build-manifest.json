@@ -1,0 +1,58 @@
+{
+  "pages": {
+    "/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
+    ],
+    "/games/[id]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/games/[id]/page.css",
+      "static/chunks/app/games/[id]/page.js"
+    ],
+    "/new/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/new/page.css",
+      "static/chunks/app/new/page.js"
+    ],
+    "/runners/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/runners/page.css",
+      "static/chunks/app/runners/page.js"
+    ],
+    "/pixel-games/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/pixel-games/page.css",
+      "static/chunks/app/pixel-games/page.js"
+    ],
+    "/tds/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/tds/page.css",
+      "static/chunks/app/tds/page.js"
+    ],
+    "/popular/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/popular/page.css",
+      "static/chunks/app/popular/page.js"
+    ],
+    "/shooters/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/shooters/page.css",
+      "static/chunks/app/shooters/page.js"
+    ],
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/page.css",
+      "static/chunks/app/page.js"
+    ]
+  }
+}

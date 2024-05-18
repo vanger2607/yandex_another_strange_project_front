@@ -1,0 +1,7 @@
+{
+  "/games/[id]/page": "app/games/[id]/page.js",
+  "/tds/page": "app/tds/page.js",
+  "/new/page": "app/new/page.js",
+  "/shooters/page": "app/shooters/page.js",
+  "/page": "app/page.js"
+}
