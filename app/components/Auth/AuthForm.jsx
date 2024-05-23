@@ -27,7 +27,6 @@ export const AuthForm = (props) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const userData = await authorize(endpoints.auth, authData);
-    console.log(`userData: ${JSON.stringify(userData)}`);
     if (isResponseOk(userData)) {
       authContext.login({...userData, id: userData._id}, userData.jwt);
       setMessage({ status: "success", text: "Вы авторизовались!" });
@@ -38,7 +37,6 @@ export const AuthForm = (props) => {
 
   useEffect(() => {
     let timer; 
-    console.log(`this is auth: ${JSON.stringify(authContext.user)}`)
     if(authContext.user) {
       timer = setTimeout(() => {
         setMessage({ status: null, text: null});

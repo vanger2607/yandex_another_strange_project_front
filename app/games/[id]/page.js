@@ -41,7 +41,6 @@ export default function GamePage(props) {
   }, []);
 
   useEffect(() => {
-    console.log("зашли в юзе эффект")
     // Данные о пользователе получаем из контекста authContext.user
     authContext.user && game
       ? setIsVoted(checkIfUserVoted(game, authContext.user["_id"]))
@@ -50,20 +49,17 @@ export default function GamePage(props) {
 
   const handleVote = async () => {
     const user = authContext.user;
-    console.log(`dear user2 ${JSON.stringify(user)}`)
     const jwt = authContext.token; // Данные о токене получаем из контекста
     let usersIdArray = game.users.length
       ? game.users.map((user) => user.id)
       : [];
     usersIdArray.push(authContext.user); // Данные о пользователе получаем из контекста
-    console.log(`array: ${JSON.stringify(usersIdArray)}`);
-    console.log(`user: ${JSON.stringify(authContext.user)}`);
     const response = await vote(
       `${endpoints.games}/${game.id}`,
       jwt,
       usersIdArray
 
-    );    console.log(`дождались ${authContext.user}`);
+    );
     if (isResponseOk(response)) {
       setGame(() => {
         return {
